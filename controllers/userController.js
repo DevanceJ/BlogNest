@@ -58,12 +58,4 @@ const getCurrentUser = asyncHandler(async (req, res) => {
     )
 })
 
-const deleteUser = asyncHandler(async (req, res) => {
-    const user = await User.findOneAndDelete({ email: req.body.email });
-    if (!user) {
-        res.status(404);
-        throw new Error("User not found");
-    }
-    res.status(200).json({ message: "User deleted" });
-})
-module.exports = { registerUser, loginUser, getCurrentUser, deleteUser };
+module.exports = { registerUser, loginUser, getCurrentUser };
