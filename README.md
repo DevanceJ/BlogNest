@@ -19,7 +19,28 @@ BlogNest is a robust Express MongoDB backend solution tailored for building powe
 3. Configure environment variables for MongoDB connection, ACCESS_TOKEN_SECRET, ACCESS_TOKEN_LIFE and PORT.
 4. Run the server using npm start or yarn start.
 5. For development, you can run the server in watch mode using npm run dev.
-6. Access the API endpoints as documented in the repository.
+
+## Blog API Endpoints
+
+- **GET** `/api/blogs`
+  - Description: Retrieve all blogs.
+- **POST** `/api/blogs`
+  - Description: Create a new blog.
+- **PUT** `/api/blogs/:id`
+  - Description: Update a specific blog by its ID.
+- **GET** `/api/blogs/:id`
+  - Description: Retrieve a specific blog by its ID.
+- **DELETE** `/api/blogs/:id`
+  - Description: Delete a specific blog by its ID.
+
+## Authentication API Endpoints
+
+- **POST** `/api/register`
+  - Description: Register a new user.
+- **POST** `/api/login`
+  - Description: Log in an existing user.
+- **GET** `/api/current`
+  - Description: Retrieve information about the currently logged-in user.
 
 ## Contributing
 
