@@ -42,10 +42,6 @@ BlogNest is a robust Express MongoDB backend solution tailored for building powe
 - **GET** `/api/current`
   - Description: Retrieve information about the currently logged-in user.
 
-## Contributing
-
-Contributions are welcome! Feel free to fork the repository, make improvements or bug fixes, and submit pull requests. Please adhere to the contribution guidelines outlined in the repository.
-
 ## License
 
 This project is licensed under the MIT License, granting you the freedom to use, modify, and distribute the code as per the terms specified in the license.
